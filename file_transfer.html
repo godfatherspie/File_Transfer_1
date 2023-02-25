@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>File Uploader</title>
+    <link rel="stylesheet" type="text/css" href="file_transfer.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  </head>
+  <body>
+    <h1>File Uploader</h1>
+    <form id="file-form" type="POST">
+      <label for="file-input">Choose a file:</label>
+      <input type="file" id="file-input" name="file">
+      <br><br>
+      <button type="submit">Upload</button>
+    </form>
+    <button type="submit" id="generate-qr-btn">Create QR Code</button>
+    <br>
+    <div id="qr-code"></div>
+    <div id="download-link"></div>
+    <div id="password-form"></div>
+    <script src="file_transfer.js"></script>
+  </body>
+</html>
